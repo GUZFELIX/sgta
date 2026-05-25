@@ -1,4 +1,6 @@
-from django.contrib import admin
-from .models import Usuario
+from django.apps import AppConfig
 
-admin.site.register(Usuario)
+
+class UsuariosConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'usuarios'
