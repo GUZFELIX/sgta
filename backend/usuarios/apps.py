@@ -1,5 +1,4 @@
-from django.apps import AppConfig
+from django.contrib import admin
+from .models import Usuario
 
-
-class UsuariosConfig(AppConfig):
-    name = 'usuarios'
+admin.site.register(Usuario)
